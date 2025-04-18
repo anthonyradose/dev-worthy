@@ -37,6 +37,7 @@ function App() {
         )}
       </div>
       <button onClick={fetchQuote}>Get New Quote</button>
+      <h1 className="text-success text-center">Hello Bootstrap!</h1>
     </div>
   );
 }
