@@ -100,8 +100,13 @@ As the purpose of the initial site is quite simple, the navigation route will be
 #### Wireframes
 
 
-All wireframes have been created with [Balsamiq](https://balsamiq.com/).
+<img src="src/assets/images/DevWorthy_wireframes1.png" alt="Wireframe for homepage" width="400"/>
 
+<img src="src/assets/images/DevWorthy_wireframes2.png" alt="Wireframe for about page" width="400"/>
+
+<img src="src/assets/images/DevWorthy_wireframes3.png" alt="Wireframe for favourites page" width="400"/>
+
+All wireframes have been created with [Balsamiq](https://balsamiq.com/).
 
 <sup><sub>[*Back to top*](#devworthy)</sup></sub>
 
@@ -133,7 +138,7 @@ Fonts have been imported from [Google Fonts](https://fonts.google.com/).
 #### Colours
 
 
-The colour scheme for the site…
+<img src="src/assets/images/DevWorthy_colorScheme.png" alt="Wireframe for favourites page" width="400"/>
 
 
 Colour scheme images made with [coolers](https://coolors.co).
