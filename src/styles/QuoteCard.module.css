@@ -1,0 +1,39 @@
+/* NavBar.module.css */
+
+.quote-box {
+  display: flex;
+  justify-content: center;
+  background-color: #FEFAE6;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: all 0.3s ease;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quote-title {
+  color: #024E69;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #024E69;
+}
+
+.author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #024E69;
+}

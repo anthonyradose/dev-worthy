@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background: #FEFAE6;
+  background: #fefae6;
 }
 
 #root {
@@ -17,4 +17,19 @@ body {
 
 .section-app {
   height: 50%;
+}
+
+button {
+  background-color: #febd36;
+  border: none;
+  color: #024e69;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fe8664;
 }

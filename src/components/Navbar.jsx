@@ -1,20 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import styles from "../styles/Navbar.module.css";
 
 const NavBar = () => {
   return (
     <>
       <nav className={`navbar navbar-expand-lg px-3 ${styles.navWrapper}`}>
-        <a
-          className={`navbar-brand d-flex align-items-center ${styles.brand}}`}
-          href="/"
+        <Link
+          className={`navbar-brand d-flex align-items-center ${styles.brand}`}
+          to="/"
         >
           <img
             src="src/assets/images/dev-worthy-logo.png"
             className={`me-2 ${styles.logo} `}
           />
           <span className={`${styles.brandText}`}>Dev Worthy</span>
-        </a>
+        </Link>
         <button
           className={`navbar-toggler ${styles.toggler}`}
           type="button"
@@ -32,19 +34,19 @@ const NavBar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className={styles.navLink} href="#home">
+              <Link className={styles.navLink} to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className={styles.navLink} href="#about">
+              <Link className={styles.navLink} to="about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className={styles.navLink} href="#favourites">
+              <Link className={styles.navLink} to="favourites">
                 Favourites
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

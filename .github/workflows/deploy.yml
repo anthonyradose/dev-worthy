@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger the action on every push to the 'main' branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runs the job on the latest Ubuntu
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2  # Checkout the code from the repository
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify the Node.js version
+
+    - name: Install dependencies
+      run: |
+        npm install  # Install all dependencies
+
+        - name: Build the project
+        run: |
+          echo "globalThis.crypto = require('crypto').webcrypto;" > vite-shim.cjs
+          node --import ./vite-shim.cjs node_modules/vite/bin/vite.js build
+      
+        
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # Target branch to deploy to
+        folder: dist  # The folder that contains the production build (usually `dist` for Vite)
+        token: ${{ secrets.GITHUB_TOKEN }}  # Automatically uses the GitHub token for authentication
