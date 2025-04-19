@@ -22,10 +22,10 @@ jobs:
       run: |
         npm install  # Install all dependencies
 
-        - name: Build the project
-        run: |
-          echo "globalThis.crypto = require('crypto').webcrypto;" > vite-shim.cjs
-          node --import ./vite-shim.cjs node_modules/vite/bin/vite.js build
+    - name: Build the project
+      run: |
+        echo "globalThis.crypto = require('crypto').webcrypto;" > vite-shim.cjs
+        node --import ./vite-shim.cjs node_modules/vite/bin/vite.js build
       
         
     - name: Deploy to GitHub Pages
