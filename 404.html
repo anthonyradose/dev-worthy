@@ -45,17 +45,9 @@
   <p>Oops! The page you're looking for doesn't exist.</p>
   <p><a href="/dev-worthy/">← Go back to homepage</a></p>
   <!-- Redirect Script -->
-  <script>
-    var path = window.location.pathname;
-
-    // Ensure we're not on the 404 page or at the root
-    if (path !== "/404.html" && path !== "/") {
-      // Check if we're already redirected to the correct path (avoid repeated redirect)
-      if (!path.startsWith("/dev-worthy/") || path === "/dev-worthy/404.html") {
-        // Perform the redirect if we're on an invalid path
-        window.location.replace("/dev-worthy" + path);
-      }
-    }
+  <script type="text/javascript">
+    window.location.href = '/dev-worthy/';
   </script>
+  
 </body>
 </html>
