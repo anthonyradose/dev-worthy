@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>404 Not Found</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="src/assets/favicon/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="src/assets/favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="src/assets/favicon/favicon-16x16.png"
+/>
   <style>
     body {
       margin: 0;
@@ -41,5 +59,12 @@
   <h1>404 - Page Not Found</h1>
   <p>Oops! The page you're looking for doesn't exist.</p>
   <p><a href="/dev-worthy/">← Go back to homepage</a></p>
+  <!-- Redirect Script -->
+  <script>
+    var path = window.location.pathname;
+    if (path !== "/") {
+      window.location.replace("/dev-worthy" + path);
+    }
+  </script>
 </body>
 </html>
