@@ -16,6 +16,36 @@
   justify-content: space-around;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #024E69;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #024E69;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.button-group .active {
+  background-color: #024E69;
+  color: #fff;
+}
+
+
 .quote-title {
   color: #024E69;
   font-size: 2.5rem;
