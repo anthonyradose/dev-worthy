@@ -22,22 +22,9 @@
 </head>
 
 <body>
-  Redirecting...
-
-  <script>
-    // Only redirect once
-    const pathname = window.location.pathname;
-    const redirectPath = "/dev-worthy" + pathname;
-
-    if (!pathname.startsWith("/dev-worthy")) {
-      sessionStorage.redirect = redirectPath;
-      window.location.replace("/dev-worthy");
-    } else if (sessionStorage.redirect) {
-      const target = sessionStorage.redirect;
-      sessionStorage.removeItem("redirect");
-      window.history.replaceState({}, "", target);
-    }
-  </script>
+  <h1>404 - Page Not Found</h1>
+  <p>Oops! That page doesn't exist.</p>
+  <p><a href="/dev-worthy/">Go back to homepage</a></p>
 </body>
 
 </html>
