@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/dev-worthy/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/dev-worthy/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/dev-worthy/favicon-16x16.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/dev-worthy/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dev-worthy/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dev-worthy/favicon-16x16.png">
   <title>404 Not Found</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -40,14 +40,22 @@
   </style>
 </head>
 <body>
-  <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="404 Not Found" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="404 Not Found">
   <h1>404 - Page Not Found</h1>
   <p>Oops! The page you're looking for doesn't exist.</p>
   <p><a href="/dev-worthy/">← Go back to homepage</a></p>
   <!-- Redirect Script -->
-  <script type="text/javascript">
-    window.location.href = '/dev-worthy/';
+  <script>
+    var path = window.location.pathname;
+
+    // Ensure we're not on the 404 page or at the root
+    if (path !== "/404.html" && path !== "/") {
+      // Check if we're already redirected to the correct path (avoid repeated redirect)
+      if (!path.startsWith("/dev-worthy/") || path === "/dev-worthy/404.html") {
+        // Perform the redirect if we're on an invalid path
+        window.location.replace("/dev-worthy" + path);
+      }
+    }
   </script>
-  
 </body>
 </html>
