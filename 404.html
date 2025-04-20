@@ -62,7 +62,9 @@
   <!-- Redirect Script -->
   <script>
     var path = window.location.pathname;
-    if (path !== "/") {
+    // Avoid redirecting if we are already at the root or 404 page
+    if (path !== "/404.html" && path !== "/") {
+      // Redirect to the correct route (your GitHub repo path)
       window.location.replace("/dev-worthy" + path);
     }
   </script>
