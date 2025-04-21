@@ -14,7 +14,7 @@ const team = [
   {
     name: "Anthony Radose",
     role: "Developer",
-    image: "src/assets/images/DSC03093_(1).jpg",
+    image: "https://ca.slack-edge.com/T0L30B202-U04H3LAR4G6-1f7d4d0debad-512",
     github: "https://github.com/anthonyradose",
     linkedin: "https://www.linkedin.com/in/anthony-radose-35a969236",
   },
